@@ -9,4 +9,4 @@ This project helps track the global cases of COVID-19 disease
 * SASS
 
 ### Preview
-[![N|Solid](https://repository-images.githubusercontent.com/289108184/0b281180-e2fd-11ea-8a67-1f48149f4f0a)](https://devnaftan.github.io/covid19-tracker/)
+[![N|Solid](https://repository-images.githubusercontent.com/289108184/28a9ab00-e2fe-11ea-9fac-bd43cd1fc535)](https://devnaftan.github.io/covid19-tracker/)
