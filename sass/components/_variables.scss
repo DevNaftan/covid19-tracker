@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
+$font-1: 'Open Sans', sans-serif;
+$font-2: 'Play', sans-serif;
+$font-3: 'Caveat', cursive;
+
+$opacity: .75;
+$border-radius: 15px;
+$transition_duration: .5s;
+$searcher: #252b43;
+$cured: rgb(69, 158, 69);
+$infected: rgb(236, 164, 30);
+$death: rgb(235, 80, 80);
+$global-border: rgb(53, 142, 158);
+$country-border: rgb(167, 165, 47);
+$footer-border: rgb(14, 114, 76);
+
+@include breakpoints(light-mode) {
+  :root {
+    --font: #353b4b;
+    --primary: #f0f3fa;
+    --secundary: #e5edff;
+    --variation: #d2ddf7;
+    --switch: #2d3341;
+  }
+}
+@include breakpoints(dark-mode) {
+  :root {
+    --font: #eceefc;
+    --primary: #1d2029;
+    --secundary: #252b43;
+    --variation: #333a56;
+    --switch: #dfe2f7;
+  }
+}
+.light-mode {
+  --font: #353b4b;
+  --primary: #f0f3fa;
+  --secundary: #e5edff;
+  --variation: #d2ddf7;
+  --switch: #2d3341;
+}
+.dark-mode {
+  --font: #eceefc;
+  --primary: #1d2029;
+  --secundary: #252b43;
+  --variation: #333a56;
+  --switch: #dfe2f7;
+}

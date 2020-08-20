@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  transition-property: background, color;
+  transition-duration: $transition_duration;
+  font-family: $font-1;
+  color: var(--font);
+  background: var(--primary);
+  @extend html;
+  &::before {
+    color: var(--font);
+    background: var(--primary);
+  }
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: $transition_duration;
+  color: var(--font);
+  &::before {
+    color: var(--font);
+  }
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+@each $titles,$size in (h1: 22px, h2: 20px, h3: 18px) {
+  #{$titles} {
+    font-size: $size;
+  }
+}
+
+.hide {
+  display: none;
+}
+.cover-style {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}

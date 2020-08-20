@@ -1,0 +1,10 @@
+include ./_variables.pug
+doctype html
+html(lang="es")
+  include ./_head.pug
+  body
+    .container
+      .cover
+      block content
+    script(src="https://unpkg.com/sweetalert/dist/sweetalert.min.js")
+    script(src="./js/scripts.js")

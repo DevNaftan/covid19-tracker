@@ -1,0 +1,17 @@
+@mixin breakpoints($breakpoint) {
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if $breakpoint == light-mode {
+    @media (prefers-color-scheme: light) {
+      @content;
+    }
+  }
+  @if $breakpoint == dark-mode {
+    @media (prefers-color-scheme: dark) {
+      @content;
+    }
+  }
+}

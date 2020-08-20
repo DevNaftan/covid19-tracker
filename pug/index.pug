@@ -1,0 +1,19 @@
+extend ./components/_template.pug
+block content
+  include ./components/_header.pug
+  main
+    include ./components/_switch.pug
+    section.global
+      h2 Global report
+      .content
+        figure.hide
+          // Loader render
+        // Global render
+    section.countries
+      h2 Reports by countries
+      include ./components/_searcher.pug
+      .content
+        figure.hide
+          // Loader render
+        // Countries render
+  include ./components/_footer.pug

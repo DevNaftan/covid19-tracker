@@ -1,0 +1,41 @@
+main {
+  padding: 20px 20px 200px 20px;
+  @include breakpoints(desktop) {
+    padding: 20px 20px 150px 20px;
+  }
+  .global {
+    h2 {
+      opacity: $opacity;
+    }
+    figure {
+      text-align: center;
+    }
+    .report-box--global {
+      max-width: 800px;
+      &__details {
+        border-top: 2px solid $global-border;
+      }
+    }
+  }
+  .countries {
+    h2 {
+      opacity: $opacity;
+    }
+    figure {
+      text-align: center;
+    }
+    .report-box--countries {
+      max-width: 400px;
+      &__details {
+        border-top: 2px solid $country-border;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0 20px 0;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

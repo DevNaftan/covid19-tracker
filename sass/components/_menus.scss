@@ -1,0 +1,109 @@
+.navbar-icon {
+  font-size: 26px;
+  user-select: none;
+  opacity: $opacity;
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
+}
+
+.navbar {
+  width: 320px;
+  padding: 20px 0;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  transition-property: transform;
+  transform: translateX(320px);
+  overflow-y: auto;
+  background: var(--primary);
+  @include breakpoints(desktop) {
+    width: auto;
+    padding: 0;
+    position: static;
+    transform: translateX(0);
+    background: none;
+  }
+  .stay-home {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: $font-3;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    align-items: flex-start;
+    @include breakpoints(desktop) {
+      flex-direction: row;
+      padding: 0;
+    }
+    li {
+      width: 100%;
+      list-style: none;
+      border-top: 1px solid var(--font);
+      @include breakpoints(desktop) {
+        width: auto;
+        border-top: none;
+      }
+      &:hover {
+        background: var(--variation);
+        @include breakpoints(desktop) {
+          background: none;
+        }
+      }
+      &:nth-child(1) {
+        background-image: url('../assets/images/svg/fever.svg');
+        @include menu-mobile-icon;
+        @include breakpoints(desktop) {
+          background-image: none;
+        }
+      }
+      &:nth-child(2) {
+        background-image: url('../assets/images/svg/wash-hands.svg');
+        @include menu-mobile-icon;
+        @include breakpoints(desktop) {
+          background-image: none;
+        }
+      }
+      &:nth-child(3) {
+        background-image: url('../assets/images/svg/vaccine.svg');
+        @include menu-mobile-icon;
+        @include breakpoints(desktop) {
+          background-image: none;
+        }
+      }
+      &:nth-child(4) {
+        background-image: url('../assets/images/svg/virus-map.svg');
+        @include menu-mobile-icon;
+        @include breakpoints(desktop) {
+          background-image: none;
+        }
+      }
+      &:nth-child(5) {
+        background-image: url('../assets/images/svg/info.svg');
+        border-bottom: 1px solid var(--font);
+        @include menu-mobile-icon;
+        @include breakpoints(desktop) {
+          background-image: none;
+          border-bottom: none;
+        }
+      }
+      a {
+        display: block;
+        padding: 25px 20px 25px 75px;
+        font-weight: bold;
+        opacity: $opacity;
+        &:hover {
+          opacity: 1;
+        }
+        @include breakpoints(desktop) {
+          padding: 0 0 0 25px;
+        }
+      }
+    }
+  }
+}

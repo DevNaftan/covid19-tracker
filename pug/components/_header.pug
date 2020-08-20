@@ -1,0 +1,11 @@
+header
+  a(href="./").logo--header
+    figure.logo__image
+      img(src="./assets/images/logo.png", alt="Logo")
+    span.logo__title.logo__title--header COVID-19 TRACKER
+  i(class=menu_icons[0]).navbar-icon.hide
+  nav.navbar
+    strong.stay-home.hide #StayAtHome
+    include ./_menu.pug
+    .reference-data.reference-data--navbar.hide
+      include ./_reference_data.pug

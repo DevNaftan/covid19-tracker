@@ -1,0 +1,63 @@
+.report-box {
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: $border-radius;
+  text-align: center;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  transition-property: background;
+  transition-duration: $transition_duration;
+  background: var(--secundary);
+  &__title {
+    text-transform: uppercase;
+  }
+  &__details {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    margin-top: 10px;
+    justify-content: space-evenly;
+  }
+  &__date {
+    p {
+      font-weight: bold;
+      font-size: 15px;
+    }
+    span {
+      font-size: 14px;
+    }
+  }
+  &::before {
+    background: var(--secundary);
+  }
+  &:hover {
+    cursor: pointer;
+    background: var(--variation);
+  }
+}
+
+.small-box {
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-family: $font-2;
+  strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  .cured {
+    font-weight: bold;
+    color: $cured;
+  }
+  .infected {
+    font-weight: bold;
+    color: $infected;
+  }
+  .death {
+    font-weight: bold;
+    color: $death;
+  }
+}

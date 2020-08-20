@@ -1,0 +1,26 @@
+.reference-data {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  a {
+    opacity: $opacity;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.reference-data--footer {
+  padding-top: 10px;
+  border-top: 2px solid $footer-border;
+  @include breakpoints(desktop) {
+    max-width: 100%;
+    border-top: none;
+    border-left: 2px solid $footer-border;
+  }
+}
+
+.reference-data--navbar {
+  padding-top: 25px;
+}

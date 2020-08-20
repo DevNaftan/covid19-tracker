@@ -1,0 +1,40 @@
+.switch {
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  strong {
+    margin-right: 10px;
+    font-weight: bold;
+    opacity: $opacity;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  input[type=checkbox]:checked + label::before {
+    transform: translateX(30px);
+  }
+  label {
+    display: block;
+    width: 60px;
+    height: 30px;
+    padding: 5px;
+    border-radius: $border-radius;
+    user-select: none;
+    background-color: var(--switch);
+    &::before {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      transform: translateX(0);
+      transition-property: transform, background;
+      transition-duration: $transition_duration;
+      background-color: var(--primary);
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
