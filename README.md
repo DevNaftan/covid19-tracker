@@ -1,5 +1,5 @@
 # COVID-19 Tracker
-This project helps track the global (and in some countries also national) cases of COVID-19 disease
+This project helps track the global cases of COVID-19 disease
 
 ### Technologies used
 * HTML5
